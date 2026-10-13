@@ -20,3 +20,5 @@ option('docs', type: 'boolean', value: false,
 
 option('tests', type: 'boolean', value: true,
   description: 'Build the tests and fuzzers')
+
+option('tools', type: 'boolean', value: true, description: 'Build command-line tool')

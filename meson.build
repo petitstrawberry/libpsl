@@ -134,7 +134,9 @@ endif
 
 subdir('include')
 subdir('src')
-subdir('tools')
+if get_option('tools')
+  subdir('tools')
+endif
 if get_option('tests')
   subdir('tests')
   subdir('fuzz')
